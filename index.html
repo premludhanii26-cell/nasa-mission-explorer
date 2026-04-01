@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NASA APOD Viewer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🌌 NASA Astronomy Picture of the Day</h1>
+  </header>
+  <main>
+    <div id="loader" class="loader">Loading space data...</div>
+    <div id="apod-container" class="card hidden">
+      <h2 id="title"></h2>
+      <p id="date" class="date"></p>
+      <div id="media"></div>
+      <p id="explanation" class="explanation"></p>
+    </div>
+    <div id="error" class="error hidden"></div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
