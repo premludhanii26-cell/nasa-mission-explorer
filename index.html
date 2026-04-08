@@ -3,22 +3,36 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NASA APOD Viewer</title>
+  <title>NASA Mission Explorer</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>🌌 NASA Astronomy Picture of the Day</h1>
+    <h1>🌌 NASA Mission Explorer</h1>
+    <p class="subtitle">Explore NASA Astronomy Pictures of the Day</p>
   </header>
   <main>
-    <div id="loader" class="loader">Loading space data...</div>
-    <div id="apod-container" class="card hidden">
-      <h2 id="title"></h2>
-      <p id="date" class="date"></p>
-      <div id="media"></div>
-      <p id="explanation" class="explanation"></p>
-    </div>
+    <section class="controls">
+      <input type="text" id="search-text" placeholder="Search by title or description..." />
+      <input type="date" id="search-date" />
+      <select id="filter-type">
+        <option value="all">All Media</option>
+        <option value="image">Images</option>
+        <option value="video">Videos</option>
+        <option value="favorites">Favorites</option>
+      </select>
+      <select id="sort-order">
+        <option value="newest">Newest First</option>
+        <option value="oldest">Oldest First</option>
+        <option value="az">Title A-Z</option>
+        <option value="za">Title Z-A</option>
+      </select>
+      <button id="theme-toggle">🌙 Toggle Theme</button>
+      <button id="reset-filters">Reset</button>
+    </section>
+    <div id="loader" class="loader hidden">Loading NASA data...</div>
     <div id="error" class="error hidden"></div>
+    <div id="apod-list" class="apod-list"></div>
   </main>
   <script src="script.js"></script>
 </body>

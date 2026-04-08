@@ -1,38 +1,85 @@
 # 🚀 NASA Mission Explorer
 
-## 📌 Description
+## 📌 Project Description
 
-NASA Mission Explorer is a web application that allows users to explore NASA's Astronomy Picture of the Day (APOD). Users can select any date to view historical space images and learn about the universe on that specific day.
+NASA Mission Explorer is a responsive web application built using **HTML, CSS, and JavaScript**.  
+It allows users to explore NASA’s Astronomy Picture of the Day (APOD) content in a simple and interactive way.
+
+The application displays space-related images and videos along with their:
+- title
+- date
+- description
+
+Users can also search, filter, sort, save favorites, and switch between dark and light theme modes.
+
+If the NASA API is temporarily unavailable, the application automatically shows demo fallback data so the project still works smoothly.
+
+---
 
 ## 🌌 API Used
 
-NASA APOD API
+**NASA APOD API**  
 https://api.nasa.gov/
 
-## ✨ Planned Features
+---
 
-* 📅 Select a date to view space images
-* 🔍 Search by date (birthday feature)
-* 🖼 Display image with title and description
-* 🔄 HD Image toggle
-* 🌙 Dark space-themed UI
-* ⭐ Favorite images (optional)
+## ✨ Features Implemented
+
+### ✅ Milestone 2 Features
+- Integrated NASA APOD API using `fetch()`
+- Displayed API data dynamically on the webpage
+- Added loading state
+- Added error handling
+- Made the website responsive
+
+### ✅ Milestone 3 Features
+- **Searching**
+  - Search by title
+  - Search by description
+
+- **Filtering**
+  - All Media
+  - Images
+  - Videos
+  - Favorites
+
+- **Sorting**
+  - Newest First
+  - Oldest First
+  - Title A-Z
+  - Title Z-A
+
+- **Button Interaction**
+  - Add to Favorites
+  - Remove Favorite
+  - Reset filters
+
+- **Dark / Light Theme Toggle**
+
+- **Local Storage**
+  - Saves favorites
+  - Saves selected theme
+
+### ✅ Extra Improvement
+- Fallback demo data is shown when live NASA data is unavailable
+
+---
 
 ## 🛠 Technologies Used
 
-* HTML
-* CSS
-* JavaScript
-* Fetch API
+- HTML
+- CSS
+- JavaScript
+- Fetch API
+- Local Storage
 
-## 📂 How to Run
+---
 
-1. Clone this repository
-2. Open index.html in your browser
+## 📂 Project Structure
 
-## 📅 Milestones
-
-* Milestone 1: Project setup and planning
-* Milestone 2: API integration
-* Milestone 3: Features (search, filter, UI enhancements)
-* Milestone 4: Deployment and final submission
+```text
+NASA/
+  index.html
+  style.css
+  script.js
+  README.md
